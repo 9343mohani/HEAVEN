@@ -1,30 +1,32 @@
 #include <stdio.h>
+#include <stdlib.h>
+
+struct Node {
+    int data;
+    struct Node* next;
+};
+
+// Function to create a new node
+struct Node* createNode(int value) {
+    struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
+    newNode->data = value;
+    newNode->next = NULL;
+    return newNode;
+}
 
 int main() {
-    // Declare a 3D array of size 2x3x4
-    int arr[2][3][4];
+    struct Node* head = createNode(10);
+    head->next = createNode(20);
+    head->next->next = createNode(30);
 
-    // Initialize the array with values
-    int value = 1;
-    for (int i = 0; i < 2; i++) {
-        for (int j = 0; j < 3; j++) {
-            for (int k = 0; k < 4; k++) {
-                arr[i][j][k] = value++;
-            }
-        }
+    // Traversing the list
+    struct Node* temp = head;
+    while (temp != NULL) {
+        printf("%d -> ", temp->data);
+        temp = temp->next;
     }
-
-    // Print the array elements
-    for (int i = 0; i < 2; i++) {
-        printf("Layer %d:\n", i);
-        for (int j = 0; j < 3; j++) {
-            for (int k = 0; k < 4; k++) {
-                printf("%3d ", arr[i][j][k]);
-            }
-            printf("\n");
-        }
-        printf("\n");
-    }
+    printf("NULL\n");
 
     return 0;
 }
+
