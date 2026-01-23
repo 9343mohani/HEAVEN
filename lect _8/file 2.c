@@ -1,34 +1,3 @@
-// #include<stdio.h>
-// int main(){
-//     // int a = 10;
-//     // int b = 29;
-//     //  int c=a+b;
-//     // printf("%d",c);
-//     // // printf("hii");
-//     int num;
-//     scanf("enter a number");
-//     // printf("enter a number");
-//     if(num%2==0){
-//     printf("even\n");
-    
-    
-        
-//         printf("%d",num);
-//     }
-    
-    
-//     return 0;
-
-// // }
-// #include <stdio.h>
-// #include <stdlib.h>
-
-// // Node structure
-// typedef struct Node {
-//     int data;
-//     struct Node* prev;
-//     struct Node* next;
-// } Node;
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -67,3 +36,5 @@ int main() {
 
     return 0;
 }
+
+    
