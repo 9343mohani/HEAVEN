@@ -17,7 +17,7 @@
 
 //     return 0;
 // }
-#include <stdio.h>
+// #include <stdio.h>
 
 // struct Shape {
 //     void (*draw)(void);
@@ -33,3 +33,13 @@
 //     circle.draw(); // abstraction in action
 //     return 0;
 // }
+#include<stdio.h>
+int main(){
+    int a = 10;
+    int b = 29;
+     int c=a+b;
+    printf("%d",c);
+    // printf("hii");
+    return 0;
+
+}
